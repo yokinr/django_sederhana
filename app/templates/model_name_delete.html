@@ -1,0 +1,16 @@
+
+{% extends 'base.html' %}
+
+
+{% block content %}
+<h1>Delete ModelName</h1>
+  <form method="post" novalidate>
+    {% csrf_token %}
+    {% if object %}
+      <p>Are you sure you want to delete "{{ object }}"?</p>
+    {% endif %}
+    <input type="submit" value="Confirm">
+  </form>
+{% endblock content %}
+
+  
