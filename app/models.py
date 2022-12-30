@@ -2,7 +2,6 @@ from django.db import models
 from django.urls import reverse
 import uuid
 from django_generic.ckeditor_config import *
-from ckeditor.fields import RichTextField
 
 
 class ModelName(models.Model):
