@@ -19,7 +19,7 @@ class ModelNameListView(ListView):
 
 class ModelNameDetailView(DetailView):
     model = ModelName
-    template_name = "model_name_list.html"
+    template_name = "model_name_detail.html"
     context_object_name = "item"
 
     def get_context_data(self, **kwargs):

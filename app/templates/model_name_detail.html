@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">
+                {{item.field1}}
+            </div>
+        </div>
+        <div class="card-body">
+            {{item.field2|safe}}
+        </div>
+        <div class="card-footer">
+            {{item.created_at}}
+        </div>
+    </div>
+{% endblock content %}
+    
