@@ -9,7 +9,6 @@ class MyModelForm(forms.ModelForm):
         fields = '__all__'
         widgets = {
             'field1': forms.TextInput({'class': 'form-control'}),
-            # 'field2': forms.Textarea({'class': 'form-control'}),
             'field2': SummernoteWidget(),
             'field3': forms.NumberInput({'class': 'form-control'}),
         }
