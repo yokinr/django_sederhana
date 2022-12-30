@@ -1,7 +1,6 @@
 from django.db import models
 from django.urls import reverse
 import uuid
-from django_generic.ckeditor_config import *
 
 
 class ModelName(models.Model):
